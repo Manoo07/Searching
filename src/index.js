@@ -1,6 +1,7 @@
 const express=require('express');
 require('dotenv').config();
 const bodyparser=require('body-parser');
+const { urlencoded } = require('body-parser');
 const {PORT}=require('./config/serverConfig');
 const app=express();
 
@@ -14,5 +15,4 @@ const setUpAndStartServer = async ()=>{
     })
 }
 setUpAndStartServer();
-const bodyparser=require('body-parser');
-const { urlencoded } = require('body-parser');
+
