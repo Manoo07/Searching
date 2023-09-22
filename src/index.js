@@ -1,6 +1,6 @@
 const express=require('express');
 require('dotenv').config();
-const { PORT } = require('./config/serverConfig');
+const {PORT}=require('./config/serverConfig');
 const app=express();
 
 const setUpAndStartServer = async ()=>{
