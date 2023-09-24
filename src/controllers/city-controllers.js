@@ -63,7 +63,7 @@ const get = async (req,res)=>{
 // PATCH -> /city/:id -> data to be updated in body
 const update = async (req,res)=>{
     try {
-        const response = await cityService.updateCity(req.params.id,);
+        const response = await cityService.updateCity(req.params.id,req.body);
         return res.status(200).json({
             data:response,
             success:true,

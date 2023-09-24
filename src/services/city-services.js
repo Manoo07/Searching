@@ -33,7 +33,8 @@ class CityService {
             console.log("Error in service layer : ");
             throw {err};
         }
-    }
+    } 
+    
     async getCity(cityId){
         try{
             const city = await this.cityRepository.getCity(cityId);
