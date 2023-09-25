@@ -3,7 +3,8 @@ require('dotenv').config();
 const bodyparser=require('body-parser');
 const { urlencoded } = require('body-parser');
 const {PORT}=require('./config/serverConfig');
-const ApiRoutes = require('./routes/index')
+const ApiRoutes = require('./routes/index');
+const {City,Airport}=require('./models/index')
 
 const setUpAndStartServer = async ()=>{
     //  create the express object

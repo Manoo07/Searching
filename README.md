@@ -34,5 +34,9 @@
  ### Airport Table -> Id,name,address,city_id,created_at,updated_at
   - Relationship -> City has many Airports but one Airport is in one City (1:N),
   so city does'nt store info about Airports , but every airport stores city since it is unique for a Airport 
-  
+  - commands to run to generate table 
+   `npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer`,
+   `npx sequelize db:migrate`
+  - seeder folder 
+  ``
  
