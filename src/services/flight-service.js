@@ -24,8 +24,23 @@ class FlightService{
             throw {error};
         }
     }
-    async getFlightData(){
-
+    async getFlight(flightId){
+        try {
+            const flight = this.flightrepository.getFlight(flightId);
+            return flight;
+        } catch (error) {
+            console.log("Error in FlightService file : ",error);
+            throw {error};
+        }
+    }
+    async getAllFLightData(data){
+        try {
+            const flights = this.flightrepository.getAllFlights(data);
+            return flights;
+        } catch (error) {
+            console.log("Error in FlightService file : ",error);
+            throw {error};
+        }
     }
 }
 module.exports = FlightService;

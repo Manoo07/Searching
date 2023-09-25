@@ -9,6 +9,8 @@ class AirplaneRepository{
         catch (error) {
             console.log("Error in airplane Repository : ",error);
         }
-}
+    }
+
+    
 }
 module.exports = AirplaneRepository;
